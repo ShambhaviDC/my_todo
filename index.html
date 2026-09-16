@@ -12,35 +12,18 @@
 </head>
 <body>
 
-    <!-- Main Card Container -->
-    <div class="todo-card">
-        <!-- Top Date Header (from Job 1) -->
-        <div class="date-header">
-            <span id="currentDate">Loading date...</span>
-        </div>
-
-        <!-- Card Content Area -->
-        <div class="card-content">
-            <h1 class="card-title">To do List</h1>
-
-            <!-- Job 2: Task list container for items -->
-            <ul id="taskList" class="task-list">
-                <!-- User added tasks will be inserted here dynamically -->
-            </ul>
-
-            <!-- Job 2: Input field to add new tasks -->
-            <div class="add-task-container">
-                <input 
-                    type="text" 
-                    id="newTaskInput" 
-                    class="task-input" 
-                    placeholder="add task ..." 
-                    autocomplete="off"
-                />
-                <button id="addTaskBtn" class="add-btn" type="button">Add</button>
-            </div>
-        </div>
+    <!-- Main container that holds all Todo List cards -->
+    <div id="listsContainer" class="lists-container">
+        <!-- Todo list cards will be added here -->
     </div>
+
+    <!-- Empty state message (shown if all lists are deleted) -->
+    <p id="emptyState" class="empty-state" style="display: none;">
+        No lists yet. Click the <strong>+</strong> button below to create one!
+    </p>
+
+    <!-- Floating "+" button to create a new Todo List (inspired by reference image) -->
+    <button id="addListBtn" class="floating-add-list-btn" type="button" title="Add new Todo List">+</button>
 
     <script src="script.js"></script>
 </body>
