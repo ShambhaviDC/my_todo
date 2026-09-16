@@ -12,9 +12,9 @@
 </head>
 <body>
 
-    <!-- Main Card Container (inspired by the reference image) -->
+    <!-- Main Card Container -->
     <div class="todo-card">
-        <!-- Top Date Header -->
+        <!-- Top Date Header (from Job 1) -->
         <div class="date-header">
             <span id="currentDate">Loading date...</span>
         </div>
@@ -23,8 +23,22 @@
         <div class="card-content">
             <h1 class="card-title">To do List</h1>
 
-            <!-- Tasks container (placeholder ready for Job 2) -->
-            <div id="todoListContainer" class="todo-list-container"></div>
+            <!-- Job 2: Task list container for items -->
+            <ul id="taskList" class="task-list">
+                <!-- User added tasks will be inserted here dynamically -->
+            </ul>
+
+            <!-- Job 2: Input field to add new tasks -->
+            <div class="add-task-container">
+                <input 
+                    type="text" 
+                    id="newTaskInput" 
+                    class="task-input" 
+                    placeholder="add task ..." 
+                    autocomplete="off"
+                />
+                <button id="addTaskBtn" class="add-btn" type="button">Add</button>
+            </div>
         </div>
     </div>
 
